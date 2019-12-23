@@ -37,7 +37,8 @@ Route::get('/', function () {
     
     // // Get all documents from collection
     foreach ($collection->all() as $document){
-        dump($document);
+        // dump($document);
+        var_dump($document->name);
     }
 
     // return view('welcome');
